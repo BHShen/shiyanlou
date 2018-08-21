@@ -1,0 +1,26 @@
+<!-- HTML 網頁設計不可或缺的元素就是表格（Table），通常表格用來做版面的排版，而表格的用法包含了幾個重要的标签，
+    分別是 table、tr 與 td 這幾個重點，組合起來才是個完整的表格，表格由 < table> 标签来定义。
+    每个表格均有若干行（由 < tr> 标签定义），每行被分割为若干单元格（由 < td> 标签定义）。字母 td 指表格数据（table data），
+    即数据单元格的内容。< th>标签用来定义表头。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。 -->
+<html>
+    <title>table 练习</title>    
+    <body style="font-size: 20px">
+        <p style="text-align: center">
+            <!--  border定义的是外边框的粗细 cellpadding:设置单元格边距 -->
+            <table align="center" border="1" background="https://static.shiyanlou.com/img/weixin_logo.png" cellpadding="5">
+                <!--  colspan ：控制此单位所占列数 rowspan：控制此单位所占行数 -->
+                <tr>
+                    <td align="center" colspan="2"> first row and first column</td>
+                    <td> first row and second column</td>
+                    <td> first row and third column</td>
+                </tr>
+
+                <tr>
+                    <td  rowspan="2"> second row and first column</td>
+                    <td> second row and second column</td>
+                    <td> second row and third column</td>
+                </tr>
+            </table>
+        </p>
+    </body>
+</html>
